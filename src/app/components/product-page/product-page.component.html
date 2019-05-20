@@ -1,0 +1,43 @@
+<div class="archive-container" @fadeIn>
+  <div class="product-image-container">
+    <img src="{{selectedProduct.displayImgs.img1}}" alt="">
+  </div>
+  <div id="product-description">
+    <span style="text-transform: capitalize">{{selectedProduct.name}}</span><br><br>
+    <span>{{selectedProduct.modelNumber}}</span><br><br>
+    <div>
+      <span>{{selectedProduct.description}}</span>
+    </div>
+    <br>
+    <br>
+    <div>
+      <span>{{selectedProduct.features}}</span>
+    </div>
+    <br>
+    <br>
+    <div>
+      <span>{{selectedProduct.details}}</span>
+    </div>
+    <br>
+    <br>
+    <div>
+      <span>{{selectedProduct.dimensions}}</span>
+    </div>
+    <br>
+    <br>
+    <button class="btn">Contact to Order</button>
+  </div>
+    <div class="product-image-container" @fadeIn>
+      <img src="{{selectedProduct.displayImgs.img2}}" alt="">
+    </div>
+    <div class="product-image-container" @fadeIn>
+      <img src="{{selectedProduct.displayImgs.img3}}" alt="">
+    </div>
+    <div class="product-image-container" @fadeIn>
+      <img src="{{selectedProduct.displayImgs.img4}}" alt="">
+    </div>
+    <div id="devin-pack-img" class="product-image-container" @fadeIn>
+      <img src="{{selectedProduct.displayImgs.img5}}" alt="">
+    </div>
+</div>
+<footer @fadeIn></footer>

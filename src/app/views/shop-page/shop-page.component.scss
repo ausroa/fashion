@@ -1,5 +1,5 @@
 .products-container {
-  height: 140%;
+  padding-bottom: 10%;
   width: 100%;
 }
 .product-container {
@@ -36,7 +36,7 @@
   }
   div:hover {
     z-index: 1;
-    transform: scale(1.25);
+    transform: scale(1.15);
   }
 }
 

@@ -22,23 +22,23 @@ export class NavbarComponent implements OnInit {
     ];
   }
 
-  goToView(route) {
-    switch(route) {
-      case 'shop':
-        this.router.navigate(['shop']);
-        break;
-      case 'look':
-        this.router.navigate(['look']);
-        break;
-      case 'product':
-        this.router.navigate(['product']);
-        break;
-      case 'about':
-        this.router.navigate(['about']);
-        break;
-      case 'contact':
-        this.router.navigate(['contact']);
-        break;
-    }
-  }
+  // goToView(route) {
+  //   switch(route) {
+  //     case 'shop':
+  //       this.router.navigate(['shop']);
+  //       break;
+  //     case 'look':
+  //       this.router.navigate(['look']);
+  //       break;
+  //     case 'product':
+  //       this.router.navigate(['product']);
+  //       break;
+  //     case 'about':
+  //       this.router.navigate(['about']);
+  //       break;
+  //     case 'contact':
+  //       this.router.navigate(['contact']);
+  //       break;
+  //   }
+  // }
 }

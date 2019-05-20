@@ -1,4 +1,4 @@
-import {Component, HostListener, OnInit} from '@angular/core';
+import {Component, EventEmitter, HostListener, OnInit, Output} from '@angular/core';
 import {ProductService} from '../../services/product.service';
 import {animate, style, transition, trigger} from '@angular/animations';
 import {Product} from '../../services/product';
@@ -18,6 +18,7 @@ import {ActivatedRoute, Router} from '@angular/router';
   ]
 })
 export class ShopPageComponent implements OnInit {
+  private product: Product;
 
   constructor(private productService: ProductService, private router: Router, private route: ActivatedRoute) { }
 
@@ -28,11 +29,8 @@ export class ShopPageComponent implements OnInit {
     return this.productService.products;
   }
 
-  testRun(product: Product) {
-    switch(product.name) {
-      case 'original pack ballistic':
-        this.router.navigate(['pack-ballistic'], {relativeTo: this.route});
-        break;
-    }
+  goToProduct(product: Product) {
+    this.productService.setSelectedProduct(product);
+    this.router.navigate(['shop', product.name]);
   }
 }

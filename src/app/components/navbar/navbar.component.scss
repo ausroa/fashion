@@ -18,7 +18,7 @@
 }
 
 .navbarLinks {
-  button {
+  a {
     margin-right: 55px;
     color: black;
     text-transform: uppercase;
@@ -27,15 +27,15 @@
     border: none;
   }
 
-  button:hover {
+  a:hover {
     border-bottom: 1px solid black;
   }
 
-  button:focus {
+  a:focus {
     outline: none;
   }
 
-  button:last-child {
+  a:last-child {
     margin-right: 200px;
   }
 }

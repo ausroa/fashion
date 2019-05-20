@@ -11,11 +11,11 @@ export class MagFlipBookComponent implements OnInit {
   constructor(private router: Router) { }
 
   ngOnInit(): void {
-    this.router.events.subscribe((e) => {
-      console.log(e);
-      if(e instanceof NavigationEnd && e.url === '/about') {
-        window.location.reload();
-      }
-    });
+    // this.router.events.subscribe((e) => {
+    //   console.log(e);
+    //   if(e instanceof NavigationEnd && window.location.pathname === '/about') {
+    //     window.location.reload();
+    //   }
+    // });
   }
 }

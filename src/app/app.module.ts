@@ -16,6 +16,7 @@ import { AboutPageComponent } from './views/about-page/about-page.component';
 import { ShopPageComponent } from './views/shop-page/shop-page.component';
 import { MagFlipBookComponent } from './components/mag-flip-book/mag-flip-book.component';
 import { ArchivesPageComponent } from './views/archives-page/archives-page.component';
+import { ProductPageComponent } from './components/product-page/product-page.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { ArchivesPageComponent } from './views/archives-page/archives-page.compo
     ShopPageComponent,
     MagFlipBookComponent,
     ArchivesPageComponent,
+    ProductPageComponent,
   ],
   entryComponents: [DialogDataExampleDialog],
   imports: [
