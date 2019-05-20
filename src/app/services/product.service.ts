@@ -67,7 +67,10 @@ export class ProductService {
       name: 'passport',
       img: 'assets/pictures/shop_passport.jpg',
       price: '0.00',
-      displayImgs: {},
+      displayImgs: {
+        img1: 'assets/pictures/passport_detail.jpg',
+        img2: 'assets/pictures/passport_1.jpg'
+      },
       modelNumber: '',
       description: '',
       features: '',
@@ -101,7 +104,10 @@ export class ProductService {
       name: 'passport',
       img: 'assets/pictures/shop_passport.jpg',
       price: '0.00',
-      displayImgs: {},
+      displayImgs: {
+        img1: 'assets/pictures/passport_detail.jpg',
+        img2: 'assets/pictures/passport_1.jpg'
+      },
       modelNumber: '',
       description: '',
       features: '',
