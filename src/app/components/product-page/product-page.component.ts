@@ -1,5 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
-import {Product} from '../../services/product';
+import {Component, OnInit} from '@angular/core';
 import {ProductService} from '../../services/product.service';
 import {animate, style, transition, trigger} from '@angular/animations';
 
@@ -17,9 +16,6 @@ import {animate, style, transition, trigger} from '@angular/animations';
   ]
 })
 export class ProductPageComponent implements OnInit {
-  @Input() product: Product;
-  @Input() description: string;
-
 
   constructor(private productService: ProductService) { }
 

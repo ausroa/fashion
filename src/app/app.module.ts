@@ -15,7 +15,6 @@ import { CampaignComponent } from './views/campaign/campaign.component';
 import { AboutPageComponent } from './views/about-page/about-page.component';
 import { ShopPageComponent } from './views/shop-page/shop-page.component';
 import { MagFlipBookComponent } from './components/mag-flip-book/mag-flip-book.component';
-import { ArchivesPageComponent } from './views/archives-page/archives-page.component';
 import { ProductPageComponent } from './components/product-page/product-page.component';
 
 @NgModule({
@@ -30,8 +29,7 @@ import { ProductPageComponent } from './components/product-page/product-page.com
     AboutPageComponent,
     ShopPageComponent,
     MagFlipBookComponent,
-    ArchivesPageComponent,
-    ProductPageComponent,
+    ProductPageComponent
   ],
   entryComponents: [DialogDataExampleDialog],
   imports: [
