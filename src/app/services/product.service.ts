@@ -5,7 +5,6 @@ import {Product} from './product';
   providedIn: 'root'
 })
 export class ProductService {
-  public description: string;
   public selectedProduct: Product;
   public products: Product[] = [
     {
@@ -20,7 +19,7 @@ export class ProductService {
       dimensions: ''
     },
     {
-      name: 'lawson',
+      name: 'lawson bag - Linen',
       img: 'assets/pictures/shop_lawson.jpg',
       price: '0.00',
       displayImgs: {
@@ -30,10 +29,16 @@ export class ProductService {
         img4: 'assets/pictures/lawson_lining_web.jpg'
       },
       modelNumber: '',
-      description: '',
-      features: '',
-      details: '',
-      dimensions: ''
+      description: 'Constructed in hand-dyed and linen printed leather, which is designed to age expressively while\n' +
+        'enduring the trials of daily use. The fully-padded body and waterproof ripstop lining keeps\n' +
+        'this piece held up well for any range of uses.',
+      features: '- 100% upcycled leather\n' +
+        '- Fully padded\n' +
+        '- Waterproof lining\n' +
+        '- Zip and magnetic pocket closures\n',
+      details: 'Shown:\n' +
+        'Linen blue / ripstop khaki lining / antique brass hardware\n',
+      dimensions: 'One size: 80 x 45 x 25cm'
     },
     {
       name: 'original pack ballistic',
@@ -108,7 +113,6 @@ export class ProductService {
   constructor() { }
 
   setSelectedProduct(product: Product): void {
-    console.log(product);
     this.selectedProduct = product;
   }
 
