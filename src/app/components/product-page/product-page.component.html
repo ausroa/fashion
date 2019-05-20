@@ -1,6 +1,6 @@
 <div class="archive-container" @fadeIn>
   <div class="product-image-container">
-    <img src="{{selectedProduct.displayImgs.img1}}" alt="">
+    <img src="{{selectedProduct.productImg}}" alt="">
   </div>
   <div id="product-description">
     <span style="text-transform: capitalize">{{selectedProduct.name}}</span><br><br>
@@ -27,17 +27,8 @@
     <br>
     <button class="btn">Contact to Order</button>
   </div>
-    <div class="product-image-container" @fadeIn>
-      <img src="{{selectedProduct.displayImgs.img2}}" alt="">
-    </div>
-    <div class="product-image-container" @fadeIn>
-      <img src="{{selectedProduct.displayImgs.img3}}" alt="">
-    </div>
-    <div class="product-image-container" @fadeIn>
-      <img src="{{selectedProduct.displayImgs.img4}}" alt="">
-    </div>
-    <div class="product-image-container" @fadeIn>
-      <img src="{{selectedProduct.displayImgs.img5}}" alt="">
-    </div>
+  <div *ngFor="let image of selectedProduct.displayImgs" class="product-image-container" @fadeIn>
+    <img src="{{image}}" alt="">
+  </div>
 </div>
 <footer @fadeIn></footer>
