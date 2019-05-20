@@ -7,7 +7,7 @@ import {ShopPageComponent} from './views/shop-page/shop-page.component';
 import {ArchivesPageComponent} from './views/archives-page/archives-page.component';
 
 const routes: Routes = [
-  {path: '/', component: HomepageComponent},
+  {path: '/fashion/', component: HomepageComponent},
   {path: 'campaign', component: CampaignComponent},
   {path: 'about', component: AboutPageComponent},
   {path: 'shop', component: ShopPageComponent},
